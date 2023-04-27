@@ -7,7 +7,7 @@ import api.view.Activity;
 public class ObjectMapper
 {
 
-	public Activity readValue(URL url, Class<Activity> class1)
+	public Activity readValue(URL https://www.boredapi.com/api/activity/, Class<Activity> class1)
 	{
 		// TODO Auto-generated method stub
 		return null;
@@ -15,7 +15,7 @@ public class ObjectMapper
 
 	 public void testJackson() throws IOException {  
 	  ObjectMapper mapper = new ObjectMapper(); 
-	  File from = new File("albumnList.txt"); 
+	  File from = new File(""); 
 	  TypeReference<HashMap<String,Object>> typeRef 
 	      = new TypeReference<HashMap<String,Object>>() {};
 

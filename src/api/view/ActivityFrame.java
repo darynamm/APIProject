@@ -1,6 +1,10 @@
 package api.view;
 
-public class ActivityFrame
+import controller.ActivityController;
+import model.Activity;
+
+
+public class ActivityFrame extends JFrame
 {
 
 }
