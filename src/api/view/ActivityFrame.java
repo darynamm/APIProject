@@ -7,6 +7,8 @@ import api.view.Activity;
 import javax.swing.JPanel;
 import javax.swing.JLabel;
 import javax.swing.ImageIcon;
+
+import java.awt.Color;
 import java.net.URL;
 
 public class ActivityFrame extends JFrame
@@ -35,7 +37,10 @@ public class ActivityFrame extends JFrame
 		this.setResizable(false);
 
 		// adding image
-
+		
+		Color PRETTY_PURPLE = new Color(198, 115, 255);
+		getContentPane().setBackground(new java.awt.Color(198, 115, 255));
+		
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		this.setVisible(true);
