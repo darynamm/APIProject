@@ -20,7 +20,9 @@ public class Activity
     
     // getters and setters for all instance variables
     
-    public String getName() {
+
+
+	public String getName() {
         return name;
     }
     
