@@ -9,31 +9,37 @@ import javax.swing.JLabel;
 import javax.swing.ImageIcon;
 import java.net.URL;
 
-
 public class ActivityFrame extends JFrame
 {
 
-	public static void main(String[] args) {
-		
-	
-		ImageIcon logo = new ImageIcon("");
-		
-		
-		JFrame frame = new JFrame();
-		frame.setTitle("Activities from the Bored API :)");
-		frame.setSize(800,600);
-		
-		frame.setLocationRelativeTo(null);
-		frame.setResizable(false);
-		
-		ImageIcon panda = new ImageIcon("boredpanda.png");
-		
+	public ActivityFrame()
+	{
+		SetupFrame();
 
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-		frame.setIconImage(panda.getImage());
-		frame.setVisible(true);
-		
-		
 	}
+
+	private void SetupFrame()
+	{
+		ImageIcon panda = new ImageIcon("boredpanda.png");
+		JLabel label = new JLabel();
+		label.setIcon(panda);
+		this.add(label);
+		this.getContentPane().add(label);
+		ImageIcon logo = new ImageIcon("");
+
+		JFrame frame = new JFrame();
+		this.setTitle("Activities from the Bored API :)");
+		this.setSize(800, 600);
+
+		this.setLocationRelativeTo(null);
+		this.setResizable(false);
+
+		// adding image
+
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		this.setVisible(true);
+
+	}
+
 }
