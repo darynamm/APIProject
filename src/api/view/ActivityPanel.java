@@ -1,5 +1,5 @@
 package api.view;
-import model.Activity;
+import api.view.Activity;
 
 import javax.swing.*;
 import java.awt.*;
