@@ -11,6 +11,7 @@ import javax.swing.JLabel;
 import javax.swing.ImageIcon;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.net.URL;
 
@@ -48,11 +49,33 @@ public class ActivityFrame extends JFrame
 		
 		
 		JButton name = new JButton("name");
+		name.setSize(15, 15);	
+		
 		JButton type = new JButton("type");
+		type.setSize(15, 15);	
+		
 		JButton participants = new JButton("participants");
+		participants.setSize(15, 15);	
+		
 		JButton accessibility = new JButton("accessibility");
+		accessibility.setSize(15, 15);
+		
+
 		JButton price = new JButton("price");
+		price.setSize(15, 15);
+		
+		
 		JButton imageLink = new JButton("imageLink");
+		imageLink.setSize(15, 15);
+		
+		this.add(name);
+		this.add(type);
+		this.add(participants);
+		this.add(accessibility);
+		this.add(price);
+		this.add(name);
+		this.add(imageLink);
+		
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		this.setVisible(true);
