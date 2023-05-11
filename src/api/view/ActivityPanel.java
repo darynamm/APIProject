@@ -3,7 +3,7 @@ import api.view.Activity;
 
 import javax.swing.*;
 import java.awt.*;
-
+import api.controller.Controller;
 public class ActivityPanel extends JPanel {
 	
 	private JLabel nameLabel;
@@ -11,12 +11,12 @@ public class ActivityPanel extends JPanel {
 	private JLabel accessibilityLabel;
 	private JLabel priceLabel;
 	
-	public ActivityPanel(Activity activity) {
+	public ActivityPanel(Controller app) {
 		setLayout(new GridLayout(4,1));
-		nameLabel = new JLabel("Activity: " + activity.getName());
-		participantsLabel = new JLabel("Participants:" + activity.getParticipants());
-		accessibilityLabel = new JLabel("Accessibility: " + activity.getAccessibility());
-		priceLabel = new JLabel("Price: " + activity.getPrice());
+		nameLabel = new JLabel("Activity: " + app.getTitle());
+		participantsLabel = new JLabel("Participants:" + app.getText());
+		accessibilityLabel = new JLabel("Accessibility: " + app.getAccess());
+		priceLabel = new JLabel("Price: " + app.getPri());
 		add(nameLabel);
 		add(participantsLabel);
 		add(accessibilityLabel);
@@ -83,7 +83,7 @@ public class ActivityPanel extends JPanel {
 
 	private void setDefaultCloseOperation(int exitOnClose)
 	{
-		// TODO Auto-generated method stub
+		
 		
 	}
 
