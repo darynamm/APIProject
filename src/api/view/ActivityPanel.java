@@ -10,6 +10,7 @@ public class ActivityPanel extends JPanel {
 	private JLabel participantsLabel;
 	private JLabel accessibilityLabel;
 	private JLabel priceLabel;
+	private JLabel typeLabel;
 	
 	public ActivityPanel(Controller app) {
 		setLayout(new GridLayout(0,2));
@@ -17,6 +18,7 @@ public class ActivityPanel extends JPanel {
 		participantsLabel = new JLabel("Participants:" + app.getText());
 		accessibilityLabel = new JLabel("Accessibility: " + app.getAccess());
 		priceLabel = new JLabel("Price: " + app.getPri());
+		typeLabel = new JLabel("Type: " + app.getIype());
 		
 		setupPanel();
 	}
@@ -27,6 +29,7 @@ public class ActivityPanel extends JPanel {
 		add(participantsLabel);
 		add(accessibilityLabel);
 		add(priceLabel); 
+		add(typeLabel);
 		ImageIcon panda = new ImageIcon("boredpanda.png");
 		JLabel label = new JLabel();
 		label.setIcon(panda);

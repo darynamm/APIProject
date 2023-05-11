@@ -64,5 +64,9 @@ public class Controller
 	{
 		return current.getPrice() + "";
 	}
+	public String getIype()
+	{
+		return current.getType() + "";
+	}
 	
 }
