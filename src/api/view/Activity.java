@@ -2,15 +2,17 @@ package api.view;
 
 public class Activity
 {
-	private String name;
+	private String activity;
     private String type;
     private int participants;
     private double accessibility;
     private double price;
     private String imageLink;
+    private String link;
+    private int key;
     
     public Activity(String name, String type, int participants, double accessibility, double price, String imageLink) {
-        this.name = name;
+        this.activity = name;
         this.type = type;
         this.participants = participants;
         this.accessibility = accessibility;
@@ -20,14 +22,33 @@ public class Activity
     
     // getters and setters for all instance variables
     
+   public Activity()
+   {
+	   
+   }
+public int getKey()
+{
+	return key;
+}
+public int setKey(int key)
+{
+	return this.key = key;
+}
+public String getLink()
+{
+	return link;
+}
 
-
-	public String getName() {
-        return name;
+public String setLink(String link)
+{
+	return this.link = link;
+}
+	public String getActivity() {
+        return activity;
     }
     
-    public void setName(String name) {
-        this.name = name;
+    public void setActivity(String name) {
+        this.activity = name;
     }
     
     public String getType() {
@@ -74,7 +95,7 @@ public class Activity
     
     @Override
     public String toString() {
-        return name + " (" + type + ") - Participants: " + participants + ", Accessibility: " + accessibility + ", Price: " + price;
+        return activity + " (" + type + ") - Participants: " + participants + ", Accessibility: " + accessibility + ", Price: " + price;
     }
 
 }

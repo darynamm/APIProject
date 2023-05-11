@@ -26,7 +26,7 @@ public class Controller
 
 	}
 
-	private static final String API_URL = "https://www.boredapi.com/path/to/endpoint?api=activity&more_parameters=value2ofN&keep_on_going=another%20answer";
+	private static final String API_URL = "https://www.boredapi.com/api/activity";
 
 	private Activity getActivity() 
 	{
@@ -36,10 +36,12 @@ public class Controller
 			ObjectMapper objectMapper = new ObjectMapper();
 			URL url = new URL(API_URL);
 			current = objectMapper.readValue(url, Activity.class);
+			System.out.println(current.getActivity());
 		}
 		catch(IOException error)
 		{
-			
+			System.out.println("data error");
+			System.out.println(error.getMessage());
 		}
 		return current;
 		
@@ -48,7 +50,7 @@ public class Controller
 	
 	public String getTitle() 
 	{
-		return current.getName();
+		return current.getActivity();
 	}
 	public String getText()
 	{
