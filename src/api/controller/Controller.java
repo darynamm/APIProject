@@ -26,7 +26,7 @@ public class Controller
 
 	}
 
-	private static final String API_URL = "https://www.boredapi.com/api/activity/";
+	private static final String API_URL = "https://www.boredapi.com/path/to/endpoint?api=activity&more_parameters=value2ofN&keep_on_going=another%20answer";
 
 	private Activity getActivity() 
 	{
