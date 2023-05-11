@@ -12,7 +12,7 @@ public class ActivityPanel extends JPanel {
 	private JLabel priceLabel;
 	
 	public ActivityPanel(Controller app) {
-		setLayout(new GridLayout(0,1));
+		setLayout(new GridLayout(0,2));
 		nameLabel = new JLabel("Activity: " + app.getTitle());
 		participantsLabel = new JLabel("Participants:" + app.getText());
 		accessibilityLabel = new JLabel("Accessibility: " + app.getAccess());
@@ -40,34 +40,13 @@ public class ActivityPanel extends JPanel {
 		
 		
 		
-		
-		JButton name = new JButton("name");
-		name.setSize(15, 15);	
-		
-		JButton type = new JButton("type");
-		type.setSize(15, 15);	
-		
-		JButton participants = new JButton("participants");
-		participants.setSize(15, 15);	
-		
-		JButton accessibility = new JButton("accessibility");
-		accessibility.setSize(15, 15);
-		
 
-		JButton price = new JButton("price");
-		price.setSize(15, 15);
-		
 		
 		JButton imageLink = new JButton("imageLink");
-		imageLink.setSize(50, 50);
+		imageLink.setSize(100, 50);
 		
-		this.add(name);
-		this.add(type);
-		this.add(participants);
-		this.add(accessibility);
-		this.add(price);
-		this.add(name);
-		this.add(imageLink);
+	
+		
 		
 		
 	}
