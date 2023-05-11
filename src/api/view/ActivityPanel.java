@@ -59,7 +59,7 @@ public class ActivityPanel extends JPanel {
 		
 		
 		JButton imageLink = new JButton("imageLink");
-		imageLink.setSize(15, 15);
+		imageLink.setSize(50, 50);
 		
 		this.add(name);
 		this.add(type);
