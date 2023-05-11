@@ -30,7 +30,7 @@ public class Controller
 
 	private Activity getActivity() 
 	{
-		Activity current = null;
+		Activity current = new Activity("","",0,0,0,"" );
 		try
 		{
 			ObjectMapper objectMapper = new ObjectMapper();
@@ -50,17 +50,17 @@ public class Controller
 	{
 		return current.getName();
 	}
-	public String getText();
+	public String getText()
 	{
-		return current.getParticipants();
+		return current.getParticipants() + "";
 	}
-	public String getAccess();
+	public String getAccess()
 	{
-		return current.getAccessibility();
+		return current.getAccessibility() + "";
 	}
-	public String getPri();
+	public String getPri()
 	{
-		return current.getPrice();
+		return current.getPrice() + "";
 	}
 	
 }

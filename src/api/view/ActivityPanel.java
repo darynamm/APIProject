@@ -12,39 +12,33 @@ public class ActivityPanel extends JPanel {
 	private JLabel priceLabel;
 	
 	public ActivityPanel(Controller app) {
-		setLayout(new GridLayout(4,1));
+		setLayout(new GridLayout(0,1));
 		nameLabel = new JLabel("Activity: " + app.getTitle());
 		participantsLabel = new JLabel("Participants:" + app.getText());
 		accessibilityLabel = new JLabel("Accessibility: " + app.getAccess());
 		priceLabel = new JLabel("Price: " + app.getPri());
+		
+		setupPanel();
+	}
+	
+	private void setupPanel()
+	{
 		add(nameLabel);
 		add(participantsLabel);
 		add(accessibilityLabel);
-		add(priceLabel);
-	}
-	
-	private void SetupFrame()
-	{
+		add(priceLabel); 
 		ImageIcon panda = new ImageIcon("boredpanda.png");
 		JLabel label = new JLabel();
 		label.setIcon(panda);
 		this.add(label);
-		this.getRootPane().add(label);
-		ImageIcon logo = new ImageIcon("");
-
-		JFrame frame = new JFrame();
 		
-		this.setSize(800, 600);
-
-		this.setLocation(null);
-		this.setVisible(false);
 
 		
 		Color PRETTY_PURPLE = new Color(198, 115, 255);
-		getRootPane().setBackground(new java.awt.Color(198, 115, 255));
+		setBackground(PRETTY_PURPLE);
 		
 		
-		frame.setLayout(new FlowLayout());
+		
 		
 		
 		JButton name = new JButton("name");
@@ -75,16 +69,8 @@ public class ActivityPanel extends JPanel {
 		this.add(name);
 		this.add(imageLink);
 		
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-		this.setVisible(true);
-
-	}
-
-	private void setDefaultCloseOperation(int exitOnClose)
-	{
-		
 		
 	}
 
+	
 }
