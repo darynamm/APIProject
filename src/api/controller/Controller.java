@@ -28,7 +28,7 @@ public class Controller
 
 	private static final String API_URL = "https://www.boredapi.com/api/activity";
 
-	private Activity getActivity() 
+	public Activity getActivity() 
 	{
 		Activity current = new Activity("","",0,0,0,"" );
 		try
