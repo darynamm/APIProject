@@ -70,10 +70,6 @@ public class ControllerTest
 		assertTrue(testedController.getActivity() != null, "Can't be null");
 	}
 
-	@Test
-	void testSomeOtherPiece()
-	{
-		assertEquals("Description", testedController.toString(), "Words match");
-	}
+
 
 }

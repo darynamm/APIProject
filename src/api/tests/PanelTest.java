@@ -80,7 +80,7 @@ public class PanelTest
 		
 		boolean hasCorrectLayout = false;
 		
-		if(testedPanel.getLayout() instanceof SpringLayout)
+		if(testedPanel.getLayout() instanceof GridLayout)
 		{
 			hasCorrectLayout = true;
 		}
